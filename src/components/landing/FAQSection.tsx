@@ -16,7 +16,7 @@ const faqs: FAQItem[] = [
   },
   {
     question: "What credit score do I need for a merchant cash advance?",
-    answer: "Unlike traditional bank loans, we focus on your business performance, not just your credit score. We work with business owners who have credit scores as low as 500. What matters most is your monthly revenue ($10K+ minimum) and time in business (6+ months). Your past credit struggles don't define your business's future.",
+    answer: "There's no minimum credit score for a merchant cash advance. We qualify you on your business performance, not your credit. What matters is your monthly revenue ($15K+ minimum) and time in business (6+ months). Your past credit struggles don't define your business's future.",
     keywords: ["merchant cash advance credit score", "bad credit business loan", "MCA requirements"],
   },
   {
@@ -26,7 +26,7 @@ const faqs: FAQItem[] = [
   },
   {
     question: "What documents do I need to apply?",
-    answer: "Our application is simple. You'll need: 3 months of business bank statements, a valid ID, and basic business information. That's it. No tax returns, no lengthy financial statements, no waiting weeks for a decision. Most applications are completed in under 5 minutes.",
+    answer: "Our application is simple. You'll need: 4-6 months of business bank statements, a valid ID, and basic business information. That's it. No tax returns, no lengthy financial statements, no waiting weeks for a decision. Most applications are completed in under 5 minutes.",
     keywords: ["business loan documents", "MCA application requirements"],
   },
   {
@@ -35,9 +35,9 @@ const faqs: FAQItem[] = [
     keywords: ["soft credit check", "no credit impact", "check business loan rate"],
   },
   {
-    question: "How much funding can I qualify for?",
-    answer: "Funding amounts range from $25,000 to $3,000,000 depending on your business revenue and the type of funding. Most small businesses qualify for $50,000 to $250,000. As a general rule, you can typically qualify for up to 100-150% of your average monthly revenue. Use our calculator above for an instant estimate.",
-    keywords: ["business funding amount", "how much can I borrow", "MCA funding limits"],
+    question: "How much can I get with a merchant cash advance?",
+    answer: "Advances range from $5,000 to $1,000,000 depending on your monthly revenue. As a general rule, you can qualify for 50% to 150% of your average monthly sales — the stronger your revenue, the more capital you can access. Use our calculator above for an instant estimate.",
+    keywords: ["merchant cash advance amount", "how much MCA can I get", "MCA funding limits"],
   },
   {
     question: "What's the difference between an MCA and a business loan?",
@@ -45,9 +45,9 @@ const faqs: FAQItem[] = [
     keywords: ["MCA vs business loan", "merchant cash advance explained", "what is MCA"],
   },
   {
-    question: "Do I need collateral for business funding?",
-    answer: "No collateral is required for merchant cash advances or business lines of credit. Your home, car, and personal assets are never at risk. For equipment financing, the equipment itself serves as collateral—but that's the only type of funding where any collateral is involved.",
-    keywords: ["unsecured business funding", "no collateral business loan", "business funding without collateral"],
+    question: "Do I need collateral for a merchant cash advance?",
+    answer: "No. A merchant cash advance is unsecured—your home, car, and personal assets are never on the line. Because an advance is repaid from a percentage of your future sales, there's no collateral to pledge and nothing to put up front.",
+    keywords: ["unsecured merchant cash advance", "no collateral MCA", "merchant cash advance without collateral"],
   },
 ];
 

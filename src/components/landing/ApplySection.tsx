@@ -113,7 +113,7 @@ export default function ApplySection() {
           className="absolute inset-0"
           style={{
             background:
-              'linear-gradient(135deg, #0A2342 0%, #0C516E 25%, #007EA7 50%, #0C516E 75%, #0A2342 100%)',
+              'linear-gradient(135deg, #0B0F15 0%, #161B24 30%, #1E2530 55%, #161B24 80%, #0B0F15 100%)',
             backgroundSize: '400% 400%',
           }}
           animate={{
@@ -153,7 +153,7 @@ export default function ApplySection() {
         className="absolute inset-0"
         style={{
           background:
-            'linear-gradient(135deg, #0A2342 0%, #0C516E 25%, #007EA7 50%, #0C516E 75%, #0A2342 100%)',
+            'linear-gradient(135deg, #0B0F15 0%, #161B24 30%, #1E2530 55%, #161B24 80%, #0B0F15 100%)',
           backgroundSize: '400% 400%',
         }}
         animate={{
@@ -169,7 +169,7 @@ export default function ApplySection() {
       {/* Animated orbs */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
-          className="absolute top-1/4 right-1/4 w-96 h-96 bg-mint-green/20 rounded-full blur-3xl"
+          className="absolute top-1/4 right-1/4 w-96 h-96 bg-slate-400/10 rounded-full blur-3xl"
           animate={{
             scale: [1, 1.3, 1],
             x: [0, 50, 0],
@@ -178,7 +178,7 @@ export default function ApplySection() {
           transition={{ duration: 10, repeat: Infinity, ease: 'easeInOut' }}
         />
         <motion.div
-          className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-ocean-blue/20 rounded-full blur-3xl"
+          className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-slate-500/10 rounded-full blur-3xl"
           animate={{
             scale: [1.2, 1, 1.2],
             x: [0, -50, 0],

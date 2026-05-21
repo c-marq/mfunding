@@ -1,13 +1,14 @@
 import Navbar from '../components/landing/Navbar';
 import HeroSection from '../components/landing/HeroSection';
-import ProblemSection from '../components/landing/ProblemSection';
-import SolutionSection from '../components/landing/SolutionSection';
-import FeaturesSection from '../components/landing/FeaturesSection';
-import CalculatorSection from '../components/landing/CalculatorSection';
-import CaseStudySection from '../components/landing/CaseStudySection';
+import QuickFeaturesSection from '../components/landing/QuickFeaturesSection';
+import MCAExplainerSection from '../components/landing/MCAExplainerSection';
+import LeverageSection from '../components/landing/LeverageSection';
+// import CalculatorSection from '../components/landing/CalculatorSection';
+import RequirementsSection from '../components/landing/RequirementsSection';
 import HowItWorksSection from '../components/landing/HowItWorksSection';
-import SecuritySection from '../components/landing/SecuritySection';
-import FAQSection from '../components/landing/FAQSection';
+import UseCasesSection from '../components/landing/UseCasesSection';
+import ReviewsSection from '../components/landing/ReviewsSection';
+import GuideSection from '../components/landing/GuideSection';
 import ApplySection from '../components/landing/ApplySection';
 import Footer from '../components/landing/Footer';
 import { SpotlightCursor } from '../components/ui/spotlight-cursor';
@@ -29,14 +30,15 @@ const HomePage = () => {
       <ScrollToTop />
       <main>
         <HeroSection />
-        <ProblemSection />
-        <SolutionSection />
-        <FeaturesSection />
-        <CalculatorSection />
-        <CaseStudySection />
+        <QuickFeaturesSection />
+        <MCAExplainerSection />
+        {/* <CalculatorSection /> */}
+        <LeverageSection />
+        <RequirementsSection />
         <HowItWorksSection />
-        <SecuritySection />
-        <FAQSection />
+        <UseCasesSection />
+        <ReviewsSection />
+        <GuideSection />
         <ApplySection />
       </main>
       <Footer />

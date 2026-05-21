@@ -16,6 +16,7 @@ const bankProcess = [
 
 const momentumProcess = [
   { step: 'Apply Online', time: '5 min', done: true },
+  { step: 'Submit Docs', time: 'Minutes', done: true },
   { step: 'Review Offers', time: '24 hrs', done: true },
   { step: 'Get Funded', time: '24-48 hrs', done: true },
 ];
@@ -322,7 +323,7 @@ export default function SolutionSection() {
                         <span className="font-bold text-gray-900">{index + 1}</span>
 
                         {/* Pulse ring animation */}
-                        {index === 2 && (
+                        {index === momentumProcess.length - 1 && (
                           <motion.span
                             className="absolute inset-0 rounded-full border-2 border-mint-green"
                             animate={{

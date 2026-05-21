@@ -2,13 +2,12 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef, useState } from 'react';
 import {
   ClipboardDocumentCheckIcon,
+  DocumentArrowUpIcon,
   MagnifyingGlassIcon,
   BanknotesIcon,
   CheckIcon,
   ArrowRightIcon,
   ClockIcon,
-  ShieldCheckIcon,
-  DocumentCheckIcon,
 } from '@heroicons/react/24/outline';
 import { ShimmerButton } from '../ui/shimmer-button';
 import { MagneticButton } from '../ui/magnetic-button';
@@ -23,7 +22,7 @@ const steps = [
     backTitle: 'What You Need',
     backItems: [
       'Business name & info',
-      'Last 3 months bank statements',
+      'Last 4-6 months bank statements',
       'Basic owner information',
       'No collateral required',
     ],
@@ -32,8 +31,25 @@ const steps = [
     highlightIcon: ClockIcon,
   },
   {
-    icon: MagnifyingGlassIcon,
+    icon: DocumentArrowUpIcon,
     step: '02',
+    title: 'Submit Your Documents',
+    shortTitle: 'Documents',
+    description: 'Send over a few simple documents so we can verify your revenue. Most owners upload everything in just a few minutes.',
+    backTitle: 'What to Send',
+    backItems: [
+      'Last 4-6 months of bank statements',
+      'Valid government-issued ID',
+      'Basic business information',
+      'Active business bank account',
+    ],
+    color: '#00BFA0',
+    highlight: 'Minutes',
+    highlightIcon: DocumentArrowUpIcon,
+  },
+  {
+    icon: MagnifyingGlassIcon,
+    step: '03',
     title: 'Review Your Offers',
     shortTitle: 'Review',
     description: 'Our system analyzes your business health and presents clear, transparent offers within hours.',
@@ -50,7 +66,7 @@ const steps = [
   },
   {
     icon: BanknotesIcon,
-    step: '03',
+    step: '04',
     title: 'Get Funded',
     shortTitle: 'Funded',
     description: 'Accept your offer, and the funds will be in your bank account in as little as 24 hours.',
@@ -253,7 +269,7 @@ export default function HowItWorksSection() {
       </div>
 
       <div className="container-max relative z-10">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -282,7 +298,7 @@ export default function HowItWorksSection() {
               </motion.span>
             </h2>
             <p className="text-text-secondary text-lg max-w-xl mx-auto mb-4">
-              Get funded in three simple steps. No complicated paperwork, no endless waiting.
+              Get funded in four simple steps. No complicated paperwork, no endless waiting.
             </p>
             <motion.p
               initial={{ opacity: 0 }}
@@ -296,7 +312,7 @@ export default function HowItWorksSection() {
 
           {/* Animated progress line - desktop */}
           <div className="hidden lg:block relative mb-8">
-            <div className="absolute top-0 left-[16%] right-[16%] h-1 bg-gray-100 dark:bg-white/10 rounded-full">
+            <div className="absolute top-0 left-[12.5%] right-[12.5%] h-1 bg-gray-100 dark:bg-white/10 rounded-full">
               <motion.div
                 className="absolute inset-y-0 left-0 bg-gradient-to-r from-mint-green via-teal to-ocean-blue rounded-full"
                 style={{ width: lineWidth }}
@@ -305,99 +321,11 @@ export default function HowItWorksSection() {
           </div>
 
           {/* Flip Cards Grid */}
-          <div className="grid lg:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {steps.map((step, index) => (
               <FlipCard key={index} step={step} index={index} />
             ))}
           </div>
-
-          {/* Fee Structure */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="mt-20"
-          >
-            <motion.div
-              className="relative rounded-3xl overflow-hidden"
-              whileHover={{ scale: 1.01 }}
-              transition={{ duration: 0.3 }}
-            >
-              {/* Animated gradient background */}
-              <motion.div
-                className="absolute inset-0"
-                animate={{
-                  background: [
-                    'linear-gradient(135deg, #F0FDF9 0%, #ECFEFF 50%, #F0FDF4 100%)',
-                    'linear-gradient(135deg, #ECFEFF 0%, #F0FDF4 50%, #F0FDF9 100%)',
-                    'linear-gradient(135deg, #F0FDF9 0%, #ECFEFF 50%, #F0FDF4 100%)',
-                  ],
-                }}
-                transition={{ duration: 6, repeat: Infinity, ease: 'linear' }}
-              />
-
-              {/* Grid pattern */}
-              <div
-                className="absolute inset-0 opacity-30"
-                style={{
-                  backgroundImage: `radial-gradient(circle at center, rgba(0, 168, 150, 0.15) 1px, transparent 1px)`,
-                  backgroundSize: '20px 20px',
-                }}
-              />
-
-              <div className="relative p-10">
-                <div className="flex flex-col md:flex-row items-center gap-8">
-                  <motion.div
-                    className="w-20 h-20 rounded-2xl bg-gradient-to-br from-mint-green/20 to-teal/20 flex items-center justify-center flex-shrink-0"
-                    whileHover={{ scale: 1.1, rotate: 10 }}
-                    animate={{
-                      boxShadow: [
-                        '0 0 0 0 rgba(0,212,157,0.3)',
-                        '0 0 0 15px rgba(0,212,157,0)',
-                        '0 0 0 0 rgba(0,212,157,0.3)',
-                      ],
-                    }}
-                    transition={{ duration: 2, repeat: Infinity }}
-                  >
-                    <ShieldCheckIcon className="w-10 h-10 text-teal" />
-                  </motion.div>
-
-                  <div className="text-center md:text-left flex-1">
-                    <h3 className="text-2xl font-semibold text-midnight-blue mb-3">
-                      Transparent Pricing, No Surprises
-                    </h3>
-                    <p className="text-body leading-relaxed">
-                      Our fees are built into the total repayment amount. There are no hidden costs or
-                      application fees. You'll know the full cost of your funding upfront before you commit.
-                    </p>
-                  </div>
-
-                  {/* Trust badges */}
-                  <div className="flex flex-wrap justify-center gap-3">
-                    {[
-                      { icon: CheckIcon, text: 'No Hidden Fees' },
-                      { icon: DocumentCheckIcon, text: 'Clear Terms' },
-                      { icon: ShieldCheckIcon, text: 'Upfront Pricing' },
-                    ].map((badge, i) => (
-                      <motion.span
-                        key={badge.text}
-                        initial={{ opacity: 0, scale: 0.9 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: 0.5 + i * 0.1 }}
-                        whileHover={{ scale: 1.05, y: -2 }}
-                        className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/80 border border-teal/20 text-sm font-medium text-teal shadow-sm"
-                      >
-                        <badge.icon className="w-4 h-4" />
-                        {badge.text}
-                      </motion.span>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </motion.div>
-          </motion.div>
 
           {/* CTA */}
           <motion.div

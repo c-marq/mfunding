@@ -46,7 +46,7 @@ const problems = [
     backTitle: '5-Minute Application.',
     backItems: [
       'Simple online form',
-      'Just 3 months bank statements',
+      'Just 4-6 months bank statements',
       'No lengthy paperwork',
       'Seize opportunities fast',
     ],

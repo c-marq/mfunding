@@ -113,16 +113,16 @@ export const products: LoanProduct[] = [
       description:
         "A Merchant Cash Advance puts working capital in your hands within 24 hours — no credit score requirement, no collateral, no red tape. You repay as a percentage of your daily sales, so payments adjust with your business.",
       approvalTime: "24 Hours",
-      amountRange: "$20K – $5M",
+      amountRange: "$5K – $1M",
     },
     specs: [
-      { label: "Funding Amount", value: "$20,000 – $5,000,000" },
-      { label: "Term Length", value: "3 to 18 Months" },
+      { label: "Funding Amount", value: "$5,000 – $1,000,000" },
+      { label: "Term Length", value: "3 to 24 Months" },
       { label: "Min. Credit Score", value: "None Required" },
-      { label: "Annual Revenue", value: "$360,000 ($30K/mo)" },
-      { label: "Time in Business", value: "1 Year" },
+      { label: "Annual Revenue", value: "$180,000 ($15K/mo)" },
+      { label: "Time in Business", value: "6 Months" },
       { label: "Approval Time", value: "24 Hours (Same Day Funding)" },
-      { label: "Cost of Capital", value: "1.20 – 1.49 Factor Rate" },
+      { label: "Cost of Capital", value: "1.1 – 1.5 Factor Rate" },
     ],
     benefits: [
       {
@@ -163,9 +163,8 @@ export const products: LoanProduct[] = [
       },
     ],
     documents: [
-      "Business Loan Application",
+      "Business Funding Application",
       "4-6 Months of Business Bank Statements",
-      "4-6 Months of Credit Card Processing/Merchant Statements (if applicable)",
     ],
     highlights: [
       "Approvals of 50%-150% of Average Monthly Sales",
@@ -182,12 +181,12 @@ export const products: LoanProduct[] = [
       {
         question: "How is this different from a bank loan?",
         answer:
-          "Banks require 680+ credit scores, 2+ years in business, mountains of paperwork, and weeks of waiting. An MCA from Momentum Funding requires no minimum credit score, just 1 year in business, minimal documents, and you can be funded the same day you apply. The trade-off is a higher cost of capital — but for many business owners, the speed and accessibility are worth it.",
+          "Banks require 680+ credit scores, 2+ years in business, mountains of paperwork, and weeks of waiting. An MCA from Momentum Funding requires no minimum credit score, just 6 months in business, minimal documents, and you can be funded the same day you apply. The trade-off is a higher cost of capital — but for many business owners, the speed and accessibility are worth it.",
       },
       {
         question: "What's a factor rate?",
         answer:
-          "A factor rate is how MCA pricing works. It's a multiplier (typically 1.20 to 1.49) applied to your advance amount. For example, a $100,000 advance at a 1.30 factor rate means you repay $130,000 total. Unlike interest rates, factor rates are fixed — you know exactly what you'll pay from day one.",
+          "A factor rate is how MCA pricing works. It's a multiplier (typically 1.1 to 1.5) applied to your advance amount. For example, a $100,000 advance at a 1.30 factor rate means you repay $130,000 total. Unlike interest rates, factor rates are fixed — you know exactly what you'll pay from day one.",
       },
       {
         question: "Will my credit score affect my approval?",
@@ -210,11 +209,11 @@ export const products: LoanProduct[] = [
       amountMin: 5000,
       amountMax: 1000000,
       amountStep: 5000,
-      factorRateMin: 1.2,
-      factorRateMax: 1.49,
+      factorRateMin: 1.1,
+      factorRateMax: 1.5,
       factorRateStep: 0.01,
       termMin: 3,
-      termMax: 18,
+      termMax: 24,
       termStep: 1,
       termUnit: "months",
       frequencies: ["daily", "weekly"],

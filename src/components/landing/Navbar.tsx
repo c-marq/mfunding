@@ -10,11 +10,10 @@ import { useUserProfile } from '../../context/UserProfileContext';
 import supabase from '../../supabase';
 
 const navLinks = [
-  { name: 'Business Loans', href: '/business-loans' },
-  { name: 'Real Estate', href: '/real-estate' },
+  { name: 'What Is an MCA', href: '/#what-is-mca' },
+  { name: 'Rates & Terms', href: '/#terms' },
   { name: 'How It Works', href: '/#how-it-works' },
-  { name: 'Success Stories', href: '/#case-study' },
-  { name: 'FAQ', href: '/#faq' },
+  { name: 'Reviews', href: '/#reviews' },
 ];
 
 export default function Navbar() {

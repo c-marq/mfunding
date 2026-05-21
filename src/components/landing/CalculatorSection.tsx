@@ -126,14 +126,14 @@ export default function CalculatorSection() {
 
   const handleFactorInput = (val: string) => {
     const num = parseFloat(val);
-    if (!isNaN(num) && num >= 1.2 && num <= 1.49) {
+    if (!isNaN(num) && num >= 1.1 && num <= 1.5) {
       setFactorRate(Math.round(num * 100) / 100);
     }
   };
 
   const handleTermInput = (val: string) => {
     const num = parseInt(val);
-    if (!isNaN(num) && num >= 3 && num <= 18) {
+    if (!isNaN(num) && num >= 3 && num <= 24) {
       setTerm(num);
     }
   };
@@ -263,11 +263,11 @@ export default function CalculatorSection() {
                   <RangeSlider
                     value={factorRate}
                     onChange={(v) => setFactorRate(Math.round(v * 100) / 100)}
-                    min={1.2}
-                    max={1.49}
+                    min={1.1}
+                    max={1.5}
                     step={0.01}
-                    minLabel="1.2"
-                    maxLabel="1.49"
+                    minLabel="1.1"
+                    maxLabel="1.5"
                   />
                 </div>
 
@@ -288,10 +288,10 @@ export default function CalculatorSection() {
                     value={term}
                     onChange={setTerm}
                     min={3}
-                    max={18}
+                    max={24}
                     step={1}
                     minLabel="3 Months"
-                    maxLabel="18 Months"
+                    maxLabel="24 Months"
                   />
                 </div>
 
