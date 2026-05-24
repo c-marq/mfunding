@@ -342,7 +342,7 @@ export default function CalculatorSection() {
                     ${formatCurrency(payment)}/{frequency === 'daily' ? 'day' : frequency === 'weekly' ? 'wk' : 'mo'}
                   </p>
                   <a
-                    href="#apply"
+                    href="https://my.mfunding.net/app"
                     className="inline-flex items-center gap-2 text-base font-semibold text-gray-700 dark:text-gray-300 hover:text-[#4CAF50] transition-colors"
                   >
                     Continue

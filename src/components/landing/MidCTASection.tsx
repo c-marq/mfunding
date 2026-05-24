@@ -21,7 +21,7 @@ export default function MidCTASection() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
-              href="#apply"
+              href="https://my.mfunding.net/app"
               className="inline-flex items-center gap-2 bg-midnight-blue text-white font-semibold px-7 py-3 rounded-lg hover:bg-midnight-blue/90 transition-colors"
             >
               Apply Now

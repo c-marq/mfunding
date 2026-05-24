@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 interface ProductCTAProps {
@@ -43,12 +42,12 @@ export default function ProductCTA({ productName }: ProductCTAProps) {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <Link
-            to="/#apply"
+          <a
+            href="https://my.mfunding.net/app"
             className="inline-block bg-mint-green hover:bg-mint-green/90 text-midnight-blue font-bold text-lg px-10 py-4 rounded-xl transition-colors"
           >
             Apply for {productName}
-          </Link>
+          </a>
         </motion.div>
 
         {/* Trust Pills */}

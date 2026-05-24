@@ -46,7 +46,7 @@ export default function RequirementsSection() {
               No credit score requirement. No collateral. No mountain of paperwork. If your business
               has steady revenue, you likely already qualify.
             </p>
-            <a href="#apply" className="btn-primary inline-flex items-center gap-2">
+            <a href="https://my.mfunding.net/app" className="btn-primary inline-flex items-center gap-2">
               Start My Application
               <ArrowRightIcon className="w-4 h-4" />
             </a>

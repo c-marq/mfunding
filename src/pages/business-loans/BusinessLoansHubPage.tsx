@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowRightIcon } from '@heroicons/react/24/solid';
 import Navbar from '../../components/landing/Navbar';
@@ -161,13 +160,13 @@ export default function BusinessLoansHubPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <Link
-                to="/#apply"
+              <a
+                href="https://my.mfunding.net/app"
                 className="inline-flex items-center gap-2 bg-mint-green hover:bg-mint-green/90 text-midnight-blue font-bold text-lg px-10 py-4 rounded-xl transition-colors"
               >
                 Apply Now — Free & No Obligation
                 <ArrowRightIcon className="w-5 h-5" />
-              </Link>
+              </a>
             </motion.div>
 
             <motion.div

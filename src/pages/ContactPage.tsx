@@ -192,13 +192,13 @@ export default function ContactPage() {
                   <p className="text-white/70 text-sm mb-4">
                     Skip the wait. Apply in 5 minutes and get funding options within 24 hours.
                   </p>
-                  <Link
-                    to="/#apply"
+                  <a
+                    href="https://my.mfunding.net/app"
                     className="inline-flex items-center gap-2 bg-mint-green text-midnight-blue font-bold px-5 py-2.5 rounded-lg hover:bg-mint-green/90 transition-colors text-sm"
                   >
                     Apply Now
                     <ArrowRightIcon className="w-4 h-4" />
-                  </Link>
+                  </a>
                 </motion.div>
               </div>
 

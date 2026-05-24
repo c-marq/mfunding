@@ -201,13 +201,13 @@ export default function RealEstateHubPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <Link
-                to="/#apply"
+              <a
+                href="https://my.mfunding.net/app"
                 className="inline-flex items-center gap-2 bg-mint-green hover:bg-mint-green/90 text-midnight-blue font-bold text-lg px-10 py-4 rounded-xl transition-colors"
               >
                 Submit Your Loan Scenario
                 <ArrowRightIcon className="w-5 h-5" />
-              </Link>
+              </a>
             </motion.div>
 
             <motion.div

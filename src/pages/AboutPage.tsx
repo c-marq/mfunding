@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import {
   ShieldCheckIcon,
@@ -390,13 +389,13 @@ export default function AboutPage() {
                   who understand what it takes to run a business — and we're here to help you keep
                   yours moving forward.
                 </p>
-                <Link
-                  to="/#apply"
+                <a
+                  href="https://my.mfunding.net/app"
                   className="inline-flex items-center gap-2 bg-ocean-blue text-white font-semibold px-6 py-3 rounded-xl hover:bg-ocean-blue/90 transition-colors"
                 >
                   Get Started Today
                   <ArrowRightIcon className="w-4 h-4" />
-                </Link>
+                </a>
               </motion.div>
 
               <motion.div
@@ -454,13 +453,13 @@ export default function AboutPage() {
                 Join <span className="text-white font-semibold">thousands of business owners</span> who got the capital they needed — fast, simple,
                 and on their terms.
               </p>
-              <Link
-                to="/#apply"
+              <a
+                href="https://my.mfunding.net/app"
                 className="inline-flex items-center gap-2 bg-mint-green text-midnight-blue font-bold px-8 py-4 rounded-xl hover:bg-mint-green/90 transition-colors text-lg"
               >
                 Apply Now
                 <ArrowRightIcon className="w-5 h-5" />
-              </Link>
+              </a>
             </motion.div>
           </div>
         </section>

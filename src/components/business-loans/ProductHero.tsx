@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowRightIcon, ClockIcon, CurrencyDollarIcon } from '@heroicons/react/24/solid';
 import type { LoanProduct } from '../../data/products';
@@ -120,13 +119,13 @@ export default function ProductHero({ product }: ProductHeroProps) {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.5 }}
         >
-          <Link
-            to="/#apply"
+          <a
+            href="https://my.mfunding.net/app"
             className="inline-flex items-center gap-2 bg-mint-green hover:bg-mint-green/90 text-midnight-blue font-bold text-lg px-8 py-4 rounded-xl transition-colors"
           >
             Check Your Rate — Free
             <ArrowRightIcon className="w-5 h-5" />
-          </Link>
+          </a>
         </motion.div>
       </div>
     </section>

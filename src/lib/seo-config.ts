@@ -167,7 +167,7 @@ export const ALT_TEXT_TEMPLATES = {
 
 // Internal linking strategy
 export const INTERNAL_LINKS = {
-  primaryCTA: '#apply',
+  primaryCTA: 'https://my.mfunding.net/app',
   calculator: '#calculator',
   features: '#features',
   howItWorks: '#how-it-works',

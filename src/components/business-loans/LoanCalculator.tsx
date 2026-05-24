@@ -1,5 +1,4 @@
 import { useState, useRef, useCallback, useEffect } from "react";
-import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import {
   CurrencyDollarIcon,
@@ -444,15 +443,15 @@ export default function LoanCalculator({ defaultProduct }: LoanCalculatorProps) 
                       Total repayment: ${formatCurrency(totalRepayment)}
                     </p>
                   </div>
-                  <Link
-                    to="/#apply"
+                  <a
+                    href="https://my.mfunding.net/app"
                     className="inline-flex items-center gap-2 text-base font-semibold text-gray-700 dark:text-gray-300 hover:text-[#4CAF50] transition-colors"
                   >
                     Apply Now
                     <span className="w-9 h-9 bg-[#4CAF50] text-white rounded-lg flex items-center justify-center">
                       <ArrowRightIcon className="w-4 h-4" />
                     </span>
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>

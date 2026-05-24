@@ -112,7 +112,7 @@ export default function HeroSection() {
             className="flex justify-center mb-8"
           >
             <MagneticButton>
-              <a href="#apply">
+              <a href="https://my.mfunding.net/app">
                 <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} className="relative">
                   <motion.div
                     className="absolute inset-0 bg-mint-green rounded-xl blur-xl opacity-40"

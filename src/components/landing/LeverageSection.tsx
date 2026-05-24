@@ -90,7 +90,7 @@ export default function LeverageSection() {
               ))}
             </ul>
 
-            <a href="#apply" className="btn-primary inline-flex items-center gap-2">
+            <a href="https://my.mfunding.net/app" className="btn-primary inline-flex items-center gap-2">
               See What You Qualify For
               <ArrowRightIcon className="w-4 h-4" />
             </a>

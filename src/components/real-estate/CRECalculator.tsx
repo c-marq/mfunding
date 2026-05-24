@@ -1,5 +1,4 @@
 import { useState, useRef, useCallback, useEffect } from "react";
-import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import {
   CurrencyDollarIcon,
@@ -406,14 +405,14 @@ export default function CRECalculator({ defaultProduct }: CRECalculatorProps) {
                     Estimates are for illustration only. Actual terms depend on property, credit, and experience.
                   </p>
 
-                  <Link
-                    to="/#apply"
+                  <a
+                    href="https://my.mfunding.net/app"
                     className="flex items-center justify-center gap-2 w-full py-3.5 rounded-xl text-white font-bold transition-opacity hover:opacity-90"
                     style={{ backgroundColor: product.color }}
                   >
                     Get Pre-Qualified — Free
                     <ArrowRightIcon className="w-4 h-4" />
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>

@@ -19,7 +19,7 @@ const footerLinks = {
   resources: [
     { name: 'How It Works', href: '/#how-it-works' },
     { name: 'Success Stories', href: '/#case-study' },
-    { name: 'Apply Now', href: '/#apply' },
+    { name: 'Apply Now', href: 'https://my.mfunding.net/app' },
   ],
   company: [
     { name: 'About Us', href: '/about' },
@@ -131,9 +131,15 @@ export default function Footer() {
             <ul className="space-y-3">
               {footerLinks.resources.map((link) => (
                 <li key={link.name}>
-                  <Link to={link.href} className="text-white/60 hover:text-white text-sm transition-colors">
-                    {link.name}
-                  </Link>
+                  {link.href.startsWith('http') ? (
+                    <a href={link.href} className="text-white/60 hover:text-white text-sm transition-colors">
+                      {link.name}
+                    </a>
+                  ) : (
+                    <Link to={link.href} className="text-white/60 hover:text-white text-sm transition-colors">
+                      {link.name}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>
